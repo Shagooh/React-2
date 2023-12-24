@@ -18,13 +18,13 @@ const Form = ({ setError, setExito }) => {
         return setErrores("Ingrese su nombre")
 
     } else if (!validNombre.test(nombre)) {
-        return setErrores("Formato de nombre invalido ingrese solo letras");
+        return setErrores("Formato de nombre invalido, ingrese solo letras");
 
     } else if (!validEmail.test(email) && email.length > 0) {
-      return setErrores("Formato de correo no válido");
+      return setErrores("Formato de correo inválido");
 
-    } else if (password1.length > 1 && password1.length < 10) {
-      return setErrores("La contraseña debe tener mínimo 10 caracteres");
+    } else if (password1.length > 1 && password1.length < 6) {
+      return setErrores("La contraseña debe tener mínimo 6 caracteres");
 
     } else if (password1 !== password2) {
       return setErrores("Las contraseñas no coinciden");
