@@ -1,0 +1,59 @@
+:root {
+  --background-color: #242424;
+  --background-color-2: #fff;
+}
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 15px 40px;
+  width: max-content;
+}
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.para {
+  font-size: 1.5rem;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+.icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  scale: 2;
+}
+
+input {
+  margin-bottom: 15px;
+}
+.btn-1 {
+  margin-top: 5px;
+  width: 100%;
+}
+.alert {
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+    width: 100%;
+  }
+}
